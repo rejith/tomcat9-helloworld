@@ -1,7 +1,7 @@
 app:
   name: Tomcat Loadgen
   code: TCLG
-  notify: appzdev@cloudbourne.co
+  notify: krishnan.rejith@gmail.com
 
 build:
   version: 0.3
@@ -9,10 +9,10 @@ build:
   build_file: pom.xml
   output_files: output/*.war
   image_template: tomcat9
-  image_name: alpha/tomcat9-helloworld
+  image_name: rejith/tomcat9-helloworld
 
 deploy:
-  context: alpha/DEV
+  context: rejith/DEV
   replicas: 2
   port: 
    - 8080
